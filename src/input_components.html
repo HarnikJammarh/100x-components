@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Components</title>
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter">
+</head>
+<body class="bg-black">
+      
+    <!-- what's happening?! -->
+    <section class="flex w-482 items-start gap-12">
+        <div>
+            <img class="w-36 h-36 shrink-0 rounded-200" src="../public/images/user-avatar.png" alt="User Avatar">
+        </div>
+        <div class="flex w-434 items-center shrink-0 self-stretch">
+            <input class="text-neutral-600 font-inter text-xl font-normal bg-transparent focus:outline-none focus:text-neutral-50 transition-colors duration-300 ease-in-out"
+            type="text" placeholder="What's happening?!">
+        </div>
+    </section>
+    <br><br>
+    
+    <!-- label -->
+    <section class="relative flex w-426 justify-between items-center">
+       <input type="text" placeholder="Label" class="text-neutral-50 font-inter text-xl font-normal bg-transparent py-16 px-12 rounded-4 border border-solid border-neutral-500 peer w-full leading-normal placeholder:text-neutral-500 focus:outline-none focus:border-twitterblue focus:ring-twitterblue">
+
+       <div class="bg-black text-neutral-500 text-xs leading-normal font-medium absolute left-4 -top-2 px-1 peer-focus:text-twitterblue invisible peer-focus:visible">
+        Label
+       </div>
+
+       <img src="../public/images/tick-icon.svg" alt="correct-icon"
+       class="w-[24px] h-[24px] absolute hidden top-1/2 right-3 -translate-y-1/2 peer-focus:block">
+    </section>
+    <br><br>
+
+    <!-- search bar -->
+
+    <section class="relative gap-15 w-348 h-39">
+        <input type="search" placeholder="Search"
+        class="flex w-full h-full  py-10 pl-10  shrink-0 rounded-99999 bg-searchbarfill text-neutral-600 font-inter text-base leading-normal font-normal outline-none focus:text-neutral-50 focus:placeholder-neutral-50 focus:border focus:border-solid focus:border-twitterblue peer"> 
+        
+        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="flex w-[15.635px] h-[15.635px] shrink-0 absolute top-3 left-2
+        fill-neutral-500 peer-focus:fill-twitterblue">
+            <g id="Group">
+            <path id="Vector" d="M16.0446 15.2054L13.1471 12.3079C14.1961 11.065 14.8334 9.46109 14.8334 7.70834C14.8334 3.77375 11.643 0.583336 7.70837 0.583336C3.77379 0.583336 0.583374 3.77375 0.583374 7.70834C0.583374 11.6429 3.77379 14.8333 7.70837 14.8333C9.46192 14.8333 11.065 14.1968 12.3064 13.1471L15.2039 16.0446C15.3202 16.1602 15.473 16.2188 15.6235 16.2188C15.7739 16.2188 15.9282 16.161 16.043 16.0446C16.2766 15.8126 16.2766 15.4374 16.0446 15.2054ZM1.77087 7.70834C1.77087 4.43479 4.43483 1.77084 7.70837 1.77084C10.9819 1.77084 13.6459 4.43479 13.6459 7.70834C13.6459 10.9819 10.9819 13.6458 7.70837 13.6458C4.43483 13.6458 1.77087 10.9819 1.77087 7.70834Z"/>
+            </g>
+        </svg>            
+      </section>
+</body>
+</html>
